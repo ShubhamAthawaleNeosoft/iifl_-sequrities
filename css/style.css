@@ -1,0 +1,677 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+@font-face {
+    font-family: 'Lato-semibold';
+    src: url('../fonts/Lato/LatoSemibold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Lato-bold';
+    src: url('../fonts/Lato/Lato-Bold.woff2') format('woff2'),
+        url('../fonts/Lato/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato-regular';
+    src: url('../fonts/Lato/Lato-Regular.woff2') format('woff2'),
+        url('../fonts/Lato/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-medium';
+    src: url('../fonts/roboto/Roboto-Medium.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto-regular';
+    src: url('../fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-bold';
+    src: url('../fonts/roboto/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans-regular';
+    src: url('../fonts/fira-sans/FiraSans-Regular.woff2') format('woff2'),
+        url('../fonts/fira-sans/FiraSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FiraSans-medium';
+    src: url('../fonts/fira-sans/FiraSans-Medium.woff2') format('woff2'),
+        url('../fonts/fira-sans/FiraSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.bg-orange {
+    background-color: #F56E28;
+}
+.text-orange {
+    color: #F56E28;
+}
+
+.other-group {
+    font-size: 11px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.bg-light1 {
+    background-color: #F5F5F5;
+}
+.bg-green {
+    background-color: #1FB21A;
+}
+.text-green {
+    color: #1FB21A;
+}
+.bg-blue {
+    background-color: #131845;
+}
+.text-blue {
+    color: #131845;
+}
+.text-gray {
+    color: #787878;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+.fs-30 {
+    font-size: 30px;
+}
+.br-radius {
+    border-radius: 11px;
+}
+h3{
+    font-family: 'Lato-bold';
+}
+/* ---------------------------------header--------------------------------------- */
+.topheader {
+    font-size: 11px;
+    font-family: 'Lato-semibold';
+}
+.login_links li:not(:nth-last-child(-n+4))::after{
+    content: "|";
+    padding: 0 8px;
+}
+.nav-header {
+    background-color: #131845;
+    background-image: linear-gradient(to right, #441A68, #131845);
+    font-size: 12PX;
+    font-family: 'Lato-semibold';
+}
+.nav-header li .nav-link {
+    color: white;
+}
+.header-logo{
+    font-family: 'Lato-regular';
+}
+.header-logo input:focus,.header-logo button:focus{
+    outline: none !important;
+    box-shadow: none;
+    border-color:none ;
+}
+/* ---------------------------------header-mobile--------------------------------------- */
+.header_mobile{
+    display: none;
+}
+.header_mobile li .nav-link {
+    color: white;
+}
+.header_mobile .logo{
+    width:40% ;
+}
+.header_mobile .logo img{
+    height: 100%;
+    /* width: 90%; */
+}
+.header_mobile .demat_btn button{
+    font-size: 10px;
+}
+.leftnav{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 75%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    left: -800px;
+    transition: 0.6s ease-in-out;
+    z-index: 1;
+}
+/* ---------------------------------Stock market section--------------------------------------- */
+.stock_market {
+    font-family: 'Roboto-medium';
+    background-color: #BFBFBF;
+    background-image: linear-gradient(#FFFFFF, #BFBFBF);
+    font-size: 18px;
+}
+.stock_market .stock-part {
+    border-right: 1px solid white;
+}
+.stock-info,.acc-info{
+    font-family: 'Lato-regular';
+}
+/* ---------------------------------bredcrum header--------------------------------------- */
+.breadcrumb_part {
+    border-bottom: 1px solid #D1CDCD;
+    border-top: 1px solid #D1CDCD;
+    margin: 2px 0;
+    font-size: 14px;
+    font-family: 'Lato-semibold';
+}
+/* --------------------banner--------------------- */
+.banner {
+    background-color: #7FD0F4;
+    background-image: linear-gradient(to right, #7FD0F4, #ABDDF5);
+}
+.banner .col-md-8 {
+    background: url(../images/Mask\ Group\ 32.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+.banner-content {
+    background: url(../images/Layer\ 4.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.banner-content p{
+    font-family: 'Lato-regular';
+    font-style: italic;
+}
+.banner-content h1 {
+    font-size: 45px;
+    color: #693C93;
+    width: 66%;
+    font-family: 'Lato-bold';
+}
+.banner h4,.banner h1{
+    font-family: 'Lato-bold';
+}
+.banner-list p{
+    width: 54%;
+}
+.banner-card{
+    font-family: 'Roboto-regular';
+}
+.banner-card p{
+    font-family: 'Roboto-medium';
+}
+.banner-card input,
+.banner-card button {
+    height: 40px;
+}
+.banner-card button,.form_bar button{
+    border: 2px solid transparent;
+    transition: all 0.8s ease-in-out;
+    font-family: 'Roboto-bold';
+}
+.banner-card button:hover,.form_bar button:hover{
+    background-color: transparent;
+    border: 2px solid #F56E28;  
+    color: #F56E28 !important;  
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.banner-card .terms p {
+    font-size: 10px;
+    width: 65%;
+    font-family: 'Roboto-regular';
+}
+.bord_partion {
+    border: 1px solid #FFFFFF;
+    opacity: 21%;
+}
+.banner-bottom .price {
+    font-size: 54px;
+    color: #F6BB2E;
+}
+.banner-bottom p {
+    font-size: 7px;
+    width: 55%;
+}
+sup {
+    color: #693C93;
+}
+/* -------------------------table---------------------- */
+table {
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* width: 500px!important; */
+}
+table th:first-child{
+    border-radius:10px 0 0 10px;
+    border-bottom:none ;
+    padding: 10px 6px;
+}
+table th:last-child{
+    border-radius:0 10px 10px 0;
+    border-bottom:none ;
+    padding: 10px 6px;
+}
+table tbody tr:first-child td:first-child{
+    border-radius: 10px 0 0 0;
+}
+table tbody tr:first-child td:last-child{
+    border-radius: 0 10px 0 0;
+}
+table tbody tr:last-child td:first-child{
+    border-radius: 0 0 0 10px;
+    border-bottom:none ;
+}
+table tbody tr:last-child td:last-child{
+    border-radius: 0 0 10px 0;
+    border-bottom:none ;
+}
+table tr>th:not(:last-child){
+    border-right:1px solid #DFDFDF;
+}
+table tr>td:not(:last-child){
+    border-right:1px solid #DFDFDF;
+}
+.thead-align{
+    margin-bottom: -20px;
+    overflow: hidden !important;
+    position: relative;
+    width: 99.3%;
+}
+thead{
+    font-family: 'Lato-bold';
+}
+tbody {
+    font-family: 'Lato-regular';
+    color: #131845;
+    font-size: 14px;
+}
+.payment_gatway thead{
+    background-color: #D1CDCD;
+    margin-top: -80px !important;
+}
+.payment_gatway thead th{
+    padding: 12px;
+}
+.payment_gatway tbody td{
+    border-bottom:1px solid #CECECE ;
+}
+.table-outline{
+    outline: #707070 solid 1px;
+}
+/* -------------------------partition---------------------- */
+.partition span {
+    border: 1px solid #D1CDCD;
+}
+/* ---------------------- open demant account--------------------------- */
+.bg-lightOrange {
+    background-color: #FBF5E9;
+}
+.open_dematacc h3{
+    font-family: 'FiraSans-medium';
+}
+.open_dematacc p{
+    font-family: 'FiraSans-regular';
+}
+.open_dematacc span{
+    font-family: 'Lato-bold';
+}
+.Steps_onlineMode p{
+    font-family: 'Lato-regular';
+}
+.open_dematacc .dashed_border{
+    border-top: 2px dashed #DF7240;
+}
+.open_dematacc .process_text
+{
+    width: 65%;
+}
+.open_dematacc .dashed_right_border{
+    border-right: 2px dashed #DF7240;
+    height: 76px;
+}
+.open_dematacc .dashed_br_partition{
+    border-right: 2px dashed #DF7240;
+    margin-top: 27px;
+}
+.steps_mobile{
+    display: none;
+    font-family: 'Lato-bold';
+}
+.steps_mobile ul li::before {
+    content: "\2022";
+    color: #EF5713;
+    font-weight: bold;
+    display: inline-block; 
+    font-size: 20px;
+    width: 1em;
+    margin-left: -1em;
+}
+.steps_mobile li{
+    border-bottom: 1px solid #D1CDCD ;
+    padding-bottom: 10px;
+}
+/*------------------------- frequently ask que--------------------------------- */
+.frq_que .accordion-item {
+    border-radius: 12px;
+    overflow: hidden;
+}
+.frq_que .accordion-header{
+    font-family: 'Lato-bold';
+}
+.frq_que .accordion-body{
+    font-family: 'Lato-regular';
+}
+.frq_que .accordion-button {
+    color: #131845;
+    background-color: white;
+}
+/* ---------------------------------form bar--------------------------------------- */
+.frm_bar_last{
+    width: 7%;
+    font-family: 'Roboto-medium';
+}
+.frm_bar_last p {
+    font-size: 7px;
+    
+}
+.frm_bar_last .price {
+    color: #F6BB2E;
+}
+.bar-partition {
+    border: 1px solid #FFFFFF;
+    opacity: 21%;
+    height: 60px;
+}
+/* ---------------------------------Contact Us section--------------------------------------- */
+.contact_us a{
+    color: #131845;
+    font-family: 'Lato-semibold';
+}
+.contact_us span{
+    font-family: 'Lato-bold';
+}
+/* ---------------------------------footer--------------------------------------- */
+footer h3,
+footer h6,
+.customer_care p {
+    color: #00aeef;
+    font-family: 'Lato-bold';
+}
+footer h3 {
+    font-size: 1.5rem !important;
+}
+.footor-list a {
+    color: #787878;
+    font-family: 'Lato-regular';
+}
+.footer-partition div {
+    border-top: 1px solid gray;
+}
+.footer_toplist a{
+    color: white;
+    font-family: 'Lato-medium';
+}
+.footer_toplist .date-time{
+    width: 15%;
+}
+.footer_toplist li:not(:last-child)::after{
+    content: "|";
+    padding: 0 4px;
+}
+.download p {
+    font-size: 20px;
+    color: #00aeef;
+}
+/* ---------------------------------pagination--------------------------------------- */
+.paging li:not(:last-child)::after{
+    content: "|";
+    color: #787878;
+    padding: 0 6px;
+}
+/* ---------------------------------desclaimer--------------------------------------- */
+.disclaimer a{
+    font-size: 0.875rem;
+    color: #0d47a1;
+    font-family: 'Lato-bold';
+}
+
+.mobile_screen {
+    display: none;
+}
+.follow_iifl{
+    margin-left: 9%;
+}
+@media screen and (min-width: 1440px) {
+    .follow_iifl{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width: 1130px) {
+    .follow_iifl{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 1088px) {
+    .follow_iifl{
+        margin-left: 2%;
+    }
+    .footer_links{
+        flex-direction: column !important;
+    }
+    .footer_links ul{
+        /* display: flex; */
+        flex-direction: row !important;
+    }
+    .footer_links li:not(:last-child)::after{
+     content: "|";
+     color: #787878;
+     padding: 0 6px;
+ }
+
+@media screen and (max-width: 1041px) {
+   .banner-card .free{
+       font-size: 20px;
+   }
+   .follow_iifl{
+    margin-left: 1%;
+    }
+    .banner-card .terms p {
+        width: 95%;
+    }
+    .banner-bottom p {
+        font-size: 7px;
+        width: 65%;
+    }
+ }
+@media screen and (max-width: 992px) {
+    .contact_us ul{
+        justify-content: left !important;
+        gap: 5%;
+    }
+    .form_bar{
+        display: none;
+    }
+    .header-links{
+        justify-content: left !important;
+    }
+    .bse{
+        display: none;
+    }
+    .banner-list p{
+        width: 48%;
+    }
+    .footer_toplist .date-time{
+        width: 50%;
+    }
+    .banner-card .free{
+        font-size: 16px;
+    }
+    .banner-card .free span{
+        font-size: 13px;
+    }
+    .banner .open_text{
+        font-size: 14px;
+    }
+    .contact_us ul {
+        width: 100% !important;
+    }
+    
+   
+ }
+ @media screen and (max-width: 886px) {
+    .top_links{
+        /* justify-content: left !important; */
+        display: inline;
+    }
+    .home_loan{
+        display: none;
+    }
+    .banner-card .free{
+        font-size: 13px;
+    }
+    .banner .open_text{
+        font-size: 13px;
+    }
+    .banner-card button{
+       font-size: 14px;
+    }
+    .banner-content {
+        background-size: 260px;
+     }
+     .banner-content h1{
+        width: 70%;
+     }
+     .banner-bottom p {
+        font-size: 7px;
+        width: 55%;
+    }
+ }
+ @media screen and (max-width: 767px) {
+    .banner-bottom p {
+        font-size: 7px;
+        width: 55%;
+    }
+    .banner-portion .col-md-8{
+        order: 2;
+    }
+    .banner-portion .col-md-4{
+        order: 1;
+    }
+    .banner-content h1 {
+        font-size: 2em;
+    }
+    .header_mobile {
+        display: flex;
+    }
+    .coal-ind{
+        display: none;
+    }
+    .banner-img{
+        padding-top: 20%;
+    }
+    header{
+        display: none;
+    }
+    .Steps_onlineMode{
+        display: none;
+    }
+    .steps_mobile{
+        display: flex;
+    }
+    .customer_care .gold .ps-2{
+        padding-left: 0px !important;
+    }
+    .customer_care .gold a{
+        padding: 0px !important;
+    }
+    .stock_content span,.stock_content i{
+        font-size: 14px;
+    }
+    .banner-card .free{
+        font-size: 25px;
+    }
+    .banner-card .free span{
+        font-size: 15px;
+    }
+    .banner .open_text{
+        font-size: 16px;
+    }   
+}
+ @media screen and (max-width: 550px) {
+    .banner-content p{
+        width: 35%;
+        font-size: 14px;
+    }
+    .banner-content {
+       background-size: 250px;
+    }
+    .stock_market i{
+        margin-left: 3px !important;
+    }
+ }
+@media screen and (max-width: 374px) {
+    .banner-content h1 {
+        font-size: 2em;
+        width: 75%;
+    }
+    .banner-content p{
+        width: 100%;
+    }
+    .header_mobile .demat_btn {
+        display: none;
+    }
+    .header_mobile .logo{
+        display: flex;
+        justify-content: center;
+        /* width: 100%; */
+    }
+    .header_mobile .logo img{
+        height: 100%;
+        width: 100%;
+    }
+    .banner-content{
+        background: none;
+    }
+   
+}}
